@@ -2,6 +2,9 @@ $(document).ready(function() {
   // listen for button click.
   $("#button").click(function() {
     var val = $("#textarea").val();
+    if (val == '') {
+      alert('please write something in the box')
+    };
     // store text in val.
     var start = "https://en.wikipedia.org/w/api.php?action=opensearch&search=";
     // store first part of url.
